@@ -1,0 +1,48 @@
+/* 1. Global Background and Font */
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-color: #f4f4f4; /* A light grey background for a clean look */
+}
+
+/* 2. Styling the Buttons */
+.button {
+    -fx-background-color: #ff6600; /* Bright orange to grab attention */
+    -fx-text-fill: white;          /* White text for contrast */
+    -fx-background-radius: 15;     /* Smooth, rounded corners */
+    -fx-padding: 10 20 10 20;
+    -fx-font-weight: bold;
+}
+
+/* 3. Hover Effect: Button turns darker when the mouse is over it */
+.button:hover {
+    -fx-background-color: #e65c00;
+    -fx-cursor: hand;
+}
+
+/* 4. Inputs (TextField & PasswordField) */
+.text-field, .password-field {
+    -fx-background-radius: 10;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10;
+    -fx-padding: 8;
+    -fx-background-color: white;
+}
+
+/* 5. Highlight Input when clicked */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #ff6600; /* Border turns orange when typing */
+    -fx-border-width: 2px;
+}
+
+/* 6. Cart Table Customization */
+.table-view {
+    -fx-background-radius: 5;
+    -fx-border-color: #ddd;
+    -fx-background-color: white;
+}
+
+/* 7. Column Headers in the Cart */
+.table-view .column-header {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
